@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <default sync-j="8" revision="dunfell"/>
+
+    <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+    <remote fetch="https://github.com/openembedded" name="oe"/>
+    <remote fetch="https://github.com/STMicroelectronics" name="st"/>
+    <remote fetch="https://github.com/meta-qt5" name="qt5"/>
+    <remote fetch="https://github.com/km-tek" name="kmt"/>
+
+    <project remote="yocto" revision="28f080629b5151ffaedc6ea493063eb8480c3664" name="poky" path="sources/poky"/>
+    <project remote="st" revision="7371f14c6ead668ef67ec3eb4b8335ea60aef974" name="meta-st-stm32mp" path="sources/meta-st-stm32mp"/>
+    <project remote="oe" revision="3cf22d15885cf0e3e16078705e9a20f3d21f12db" name="meta-openembedded" path="sources/meta-openembedded"/>
+    <project remote="kmt" revision="5d7e47ca10ba2adc792ea5befd47c6fc9363bb04" name="bsp-base-st" path="sources/base">
+        <copyfile dest="README.md" src="README.md"/>
+        <copyfile dest="setup-environment" src="setup-environment"/>
+    </project>
+
+</manifest>
